@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Catalog</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+        }
+
+        html {
+            height: -webkit-fill-available;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 100vh;
+            height: -webkit-fill-available;
+            max-height: 100vh;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .b-example-divider {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            pointer-events: none;
+            fill: currentColor;
+        }
+
+        .dropdown-toggle {
+            outline: 0;
+        }
+
+        .nav-flush .nav-link {
+            border-radius: 0;
+        }
+
+        .btn-toggle {
+            display: inline-flex;
+            align-items: center;
+            padding: .25rem .5rem;
+            font-weight: 600;
+            color: rgba(0, 0, 0, .65);
+            background-color: transparent;
+            border: 0;
+        }
+
+        .btn-toggle:hover,
+        .btn-toggle:focus {
+            color: rgba(0, 0, 0, .85);
+            background-color: #d2f4ea;
+        }
+
+        .btn-toggle::before {
+            width: 1.25em;
+            line-height: 0;
+            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+            transition: transform .35s ease;
+            transform-origin: .5em 50%;
+        }
+
+        .btn-toggle[aria-expanded="true"] {
+            color: rgba(0, 0, 0, .85);
+        }
+
+        .btn-toggle[aria-expanded="true"]::before {
+            transform: rotate(90deg);
+        }
+
+        .btn-toggle-nav a {
+            display: inline-flex;
+            padding: .1875rem .5rem;
+            margin-top: .125rem;
+            margin-left: 1.25rem;
+            text-decoration: none;
+        }
+
+        .btn-toggle-nav a:hover,
+        .btn-toggle-nav a:focus {
+            background-color: #d2f4ea;
+        }
+
+        .scrollarea {
+            overflow-y: auto;
+        }
+
+        .fw-semibold {
+            font-weight: 600;
+        }
+
+        .lh-tight {
+            line-height: 1.25;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4">Главная</h1>
+                    <p class="fs-3 text-body-secondary">Вы находитесь на сайте, предназначенном для любования
+                        покемонами!</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="text-end">
+                    {% load static %}
+                    <img src="static/images/pika.png" alt="Pika">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Товар 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title pricing-card-title">$100</h2>
+                        <p>
+                            10 users included,
+                            2 GB of storage,
+                            Email support,
+                            Help center access
+                        </p>
+                        <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card shadow-md">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Оставьте заявку:</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label">Имя</label>
+                                <input name="Name" type="text" class="form-control" id="exampleInputName"
+                                       aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail" class="form-label">Email</label>
+                                <input name="Email" type="email" class="form-control" id="exampleInputEmail"
+                                       placeholder="name@example.com">
+                            </div>
+                            <button type="submit" class="w-100 btn btn-lg btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header text-center">
+                        <h3 class="card-title">FAQ:</h3>
+                        <p class="d-inline-flex gap-1">
+                            <button class="btn btn-outline-success btn-lg dropdown-toggle form-control"
+                                    data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample1"
+                                    aria-expanded="false"
+                                    aria-controls="collapseExample1">
+                                Как купить?
+                            </button>
+                            <button class="btn btn-outline-success btn-lg dropdown-toggle form-control"
+                                    data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample2"
+                                    aria-expanded="false"
+                                    aria-controls="collapseExample2">
+                                Как
+                                доставить?
+                            </button>
+                            <button class="btn btn-outline-success btn-lg dropdown-toggle form-control"
+                                    data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample3"
+                                    aria-expanded="false"
+                                    aria-controls="collapseExample3">
+                                Какая
+                                гарантия?
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                Позвони мне, позвони!
+                                Позвони мне ради бога!
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                На оленях утром ранним!
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                Усы, лапы и хвост!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="card">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Название товара</th>
+                        <th scope="col">Цена за штуку</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col">Итоговая сумма</th>
+                        <th scope="col">Статус заказа</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Мешок для подарков</td>
+                        <td>549.99</td>
+                        <td>476</td>
+                        <td>261795.24</td>
+                        <td class="table-primary">Новый</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Костюм деда мороза</td>
+                        <td>5899.99</td>
+                        <td>260</td>
+                        <td>753997.40</td>
+                        <td class="table-warning">В обработке</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Игрушка елочная</td>
+                        <td>250.00</td>
+                        <td>998</td>
+                        <td>249500</td>
+                        <td class="table-primary">Новый</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Палочка волшебная</td>
+                        <td>380.00</td>
+                        <td>590</td>
+                        <td>224200</td>
+                        <td class="table-success">Обработан</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Свечи бенгальские</td>
+                        <td>180.90</td>
+                        <td>612</td>
+                        <td>110710</td>
+                        <td class="table-danger">Отменен</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+<script>
+    /* global bootstrap: false */
+    (function () {
+        'use strict'
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+            new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    })()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
